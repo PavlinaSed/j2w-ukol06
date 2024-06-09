@@ -1,6 +1,8 @@
 package cz.czechitas.java2webapps.ukol6.entity;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
@@ -8,8 +10,9 @@ import jakarta.validation.constraints.Pattern;
 import org.hibernate.validator.constraints.Length;
 
 @Entity
-public class Card {
+public class Vizitka {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @NotBlank
     @Length(max = 100)
@@ -34,7 +37,7 @@ public class Card {
     private String telefon;
     @Length(max = 100)
     private String web;
-    private String celaAdresa;
+    // private String celaAdresa;
 
     public Integer getId() {
         return id;
@@ -108,7 +111,7 @@ public class Card {
         this.web = web;
     }
 
-    public String getCelaAdresa() {
-        return celaAdresa;
-    }
+    // public String getCelaAdresa() {
+    //     return ulice + ", " + obec + psc;
+    // }
 }

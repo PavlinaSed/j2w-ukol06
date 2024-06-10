@@ -37,7 +37,7 @@ public class Vizitka {
     private String telefon;
     @Length(max = 100)
     private String web;
-    // private String celaAdresa;
+
 
     public Integer getId() {
         return id;

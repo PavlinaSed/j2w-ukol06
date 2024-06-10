@@ -111,7 +111,7 @@ public class Vizitka {
         this.web = web;
     }
 
-    // public String getCelaAdresa() {
-    //     return ulice + ", " + obec + psc;
-    // }
+    public String getCelaAdresa() {
+        return ulice + ", " + obec + psc;
+    }
 }

@@ -2,7 +2,7 @@
 [@c.page]
     [#list seznam as card]
         <div class="seznam">
-        <a href="/detail">
+        <a href="/${card.id}">
             <div class="vizitka">
                 <div class="jmeno">${card.celeJmeno}</div>
                 <div class="firma">${card.firma}</div>
